@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;  
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+    min-height: 100%;    
+    overflow-x: hidden;
+}
+
+
+/* header cover, text and icons */
+
+.cover {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    
+}
+
+
+ .site-header h2 {
+    position: relative;
+    color: #ccc;
+    top: 6em;
+    left: 10em;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+ }
+
+ .site-header h1 {
+     position: relative;
+     color: white;
+     font-size: 6em;
+     top: 1.7em;
+     left: 3.3em;
+ }
+
+ 
+.site-header button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-weight: bold;
+    position: relative;
+    top: 7em;
+    left: 27em;
+    cursor: pointer;
+
+}
+
+
+
+
+/* navbar */
+
+.main-nav img {
+    width: 3em; 
+    margin: 15px;
+    float: right;
+   
+}
+
+.site-width {
+    clear: both;
+}
+
+/* article margin */
+
+.main-article {
+    margin-top: 40%;
+}
+
+/* about me */
+
+.divider {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+
+.about h2 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #ccc;
+    line-height: 1.255;
+}
+
+.about h3 {
+    margin-top: 0;
+    font-size: 4em;
+    text-align: center;
+    color: #c90036;
+}
+
+
+.about p {
+    padding: 2em 5em 3em 5em;
+    font-size: 1.7em;
+}
+
+
+
+/* my skills */
+
+
+.skills h2 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #ccc;
+}
+
+.skills h3 {
+    margin-top: 0;
+    font-size: 4em;
+    text-align: center;
+    color: #c90036;
+}
+
+.skills img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    padding: 3em 0 3em 0;
+}
+
+
+/* contact */
+
+.contact {
+    background: url("../img/background.png");
+    height: 100vw;
+}
+
+.contact h2 {
+    padding-top: 40px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #ccc;
+}
+
+.contact h3 {
+    margin-top: 0;
+    font-size: 4em;
+    text-align: center;
+    color: #c90036;
+}
+
+input[type=text],
+input[type=email] {
+    width: 35%;
+    padding: 2em;
+    border: 0;
+    outline: none;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 3rem;
+    border-bottom: 2px solid rgb(170, 0, 0, .5);
+    background-color: rgb(39, 39, 39);
+    font-family: 'Rubik', sans-serif; 
+    display: flex;  
+    
+  
+    
+}
+
+
+
+textarea {
+    overflow: auto;
+    position: absolute;
+    float: right;
+    width: 25%;
+    padding: 2em;
+    border: 0;
+    outline: none;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 3rem;
+    border-bottom: 2px solid rgb(170, 0, 0, .5);
+    background-color: rgb(39, 39, 39);
+    font-family: 'Rubik', sans-serif;
+    margin: -30% 0 0 25%;
+    
+   
+    
+    
+}
+
+.form {
+    background-color: rgb(39, 39, 39);
+    border-radius: 10px;
+    padding: 50px 0 20px 60px;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+
+
+.message {
+    background: linear-gradient(0deg, rgba(201,0,54,0.4433123591233369) 0%, rgba(201,0,54,1) 100%);
+    border: 5px solid black;
+    border-radius: 500px;
+    color: white;
+    padding: 10px 10px;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    margin-top: 60px; 
+    cursor: pointer;
+}
+
+.fab {
+    padding: 8px;
+    font-size: 1.3em;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(201,0,54,0.4433123591233369) 0%, rgba(201,0,54,1) 100%);
+    color: white;
+    border: 5px solid black;
+    position: relative;
+    top: -30px;
+    left: -30px;
+    cursor: pointer;
+    margin-left: 10px;
+      
+}
+
+
+
+
+
+@media screen and (min-width: 913px) {
+    .main-nav img {
+        width: 4em;
+    }
+
+    .contact {
+        height: 70vw;
+    }
+
+}
+
+@media screen and (min-width: 1062px) {
+    textarea {
+        margin-top: -18%;
+    }
+}
+
+@media screen and (min-width: 1684px) {
+    .about h2 {
+        padding-top: 70px;
+    }
+
+    .contact {
+        height: 40vw;
+    }
+
+    textarea {
+        margin-top: -12%;
+    }
+
+    .main-nav img {
+        margin: 40px;
+
+    }
+}
+
+@media screen and (min-width: 1930px){
+    .site-header h2  {
+        top: 13em;
+        left: 20em;
+    }
+
+    .site-header h1 {
+        top: 3.7em;
+        left: 6.5em;
+    }
+
+    .site-header button {
+        top: 15em;
+        left: 41em;
+    }
+
+    .about h2 {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-width: 1535px) {
+    .about h2 {
+        padding-top: 100px;
+    }
+
+    .main-nav img {
+        margin: 50px;
+    }
+
+    textarea {
+        margin-top: -13%;
+    }
+
+    .contact {
+        height: 40vw;
+    }
+}
